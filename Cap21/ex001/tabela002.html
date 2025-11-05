@@ -14,6 +14,12 @@
             border-collapse: collapse ;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: rgba(255, 192, 203, 0.527);
+        }
+
         td, th {
            
             border: 1px solid black;
@@ -38,10 +44,11 @@
             tFoot
                 tr, td, th-->
     <table>
+        <caption>População dos Estados Brasileiros</caption>  <!--<caption> = Título da tabela-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -183,7 +190,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">213 421 037</td>
             </tr>
         </tfoot>
